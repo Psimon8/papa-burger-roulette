@@ -15,8 +15,6 @@ drinks = [
     "Cristalline gazeuse", "Coca zero", "Eau plate Acquarelle", "Schweppes agrumes", "Oasis tropical"
 ]
 
-st.title("Sélecteur de Commande de Burger Aléatoire")
-
 if st.button('Go Big or Go Miam !'):
     selected_burger = random.choice(burger_names)
     selected_size = random.choice(sizes)
