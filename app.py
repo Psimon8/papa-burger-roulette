@@ -17,7 +17,7 @@ drinks = [
 
 st.title("Sélecteur de Commande de Burger Aléatoire")
 
-if st.button('Générer une Commande Aléatoire'):
+if st.button('Go Big or Go Miam !'):
     selected_burger = random.choice(burger_names)
     selected_size = random.choice(sizes)
     selected_doneness = random.choice(doneness_levels)
@@ -28,9 +28,3 @@ if st.button('Générer une Commande Aléatoire'):
     st.write(f"**Cuisson:** {selected_doneness}")
     st.write(f"**Boisson:** {selected_drink}")
 
-# Instructions
-st.write("""
-### Instructions :
-- Cliquez sur le bouton 'Générer une Commande Aléatoire' pour obtenir une commande de burger aléatoire.
-- L'application sélectionnera aléatoirement un nom de burger, une taille, une cuisson et une boisson pour vous.
-""")
