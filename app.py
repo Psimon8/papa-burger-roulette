@@ -3,14 +3,16 @@ import random
 
 # Définir le menu
 burger_names = [
-    "Classic Burger", "Cheese Burger", "Bacon Burger", "Vegan Burger",
-    "Chicken Burger", "Fish Burger", "Spicy Burger", "BBQ Burger"
+    "Le mathis", "Le romeo", "Le louis", "L' oriental", "Le hugo", "Le bollywood", "Le robin",
+    "Le savoyard", "Le corentin", "Le classic", "Le big papa", "Le végétarien", "Le nicolas",
+    "Le crétois", "Le milano", "L’italien", "Le Bacon", "Le Poivrier", "Le Printannier (poisson)",
+    "L’océan (poisson)"
 ]
-sizes = ["Simple", "Double", "Triple"]
-doneness_levels = ["Rare", "Medium Rare", "Medium", "Medium Well", "Well Done"]
+sizes = ["Simple"] * 30 + ["Double"] * 10 + ["Triple"]
+doneness_levels = ["Bleue", "Saignante", "A point", "Bien Cuit", "Semelle", "Crue"]
 drinks = [
-    "Coca Cola", "Pepsi", "Sprite", "Fanta", "Water", 
-    "Orange Juice", "Apple Juice", "Lemonade"
+    "Coca cola", "Fanta orange", "Fanta citron", "7Up", "Lipton ice tea",
+    "Cristalline gazeuse", "Coca zero", "Eau plate Acquarelle", "Schweppes agrumes", "Oasis tropical"
 ]
 
 st.title("Sélecteur de Commande de Burger Aléatoire")
