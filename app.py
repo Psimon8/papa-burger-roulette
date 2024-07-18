@@ -21,7 +21,7 @@ if st.button('Go Big or Go Miam !'):
     selected_doneness = random.choice(doneness_levels)
     selected_drink = random.choice(drinks)
 
-    st.subheader("Votre Commande de Burger Aléatoire")
+    st.subheader("Votre Menu Burger à commander")
     st.write(f"**Burger:** {selected_burger} - {selected_size}")
     st.write(f"**Cuisson:** {selected_doneness}")
     st.write(f"**Boisson:** {selected_drink}")
