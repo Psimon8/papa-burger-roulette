@@ -2,8 +2,7 @@ import streamlit as st
 import random
 
 st.set_page_config(
-    layout="wide",
-    page_title="Papa Burger Roulette",
+       page_title="Papa Burger Roulette",
     page_icon="🍔"
 )
 # Définir le menu
