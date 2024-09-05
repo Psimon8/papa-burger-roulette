@@ -1,6 +1,11 @@
 import streamlit as st
 import random
 
+st.set_page_config(
+    layout="wide",
+    page_title="Papa Burger Roulette",
+    page_icon="🍔"
+)
 # Définir le menu
 burger_names = [
     "Le mathis", "Le romeo", "Le louis", "L' oriental", "Le hugo", "Le bollywood", "Le robin",
