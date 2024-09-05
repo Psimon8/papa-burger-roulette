@@ -1,10 +1,12 @@
 import streamlit as st
 import random
+import pyperclip
 
 st.set_page_config(
-       page_title="Papa Burger Roulette",
+    page_title="Papa Burger Roulette",
     page_icon="🍔"
 )
+
 # Définir le menu
 burger_names = [
     "Le mathis", "Le romeo", "Le louis", "L' oriental", "Le hugo", "Le bollywood", "Le robin",
@@ -26,7 +28,13 @@ if st.button('Go Big or Go Miam !'):
     selected_drink = random.choice(drinks)
 
     st.subheader("Votre Menu Burger à commander")
+    result = f"{selected_burger} - {selected_size}, Cuisson: {selected_doneness}, Boisson: {selected_drink}"
     st.write(f"**Burger:** {selected_burger} - {selected_size}")
     st.write(f"**Cuisson:** {selected_doneness}")
     st.write(f"**Boisson:** {selected_drink}")
+
+    # Affichage du résultat pour copie
+    if st.button('Copier le menu'):
+        pyperclip.copy(result)
+        st.success("Le menu a été copié dans le presse-papiers!")
 
